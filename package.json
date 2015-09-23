@@ -1,7 +1,7 @@
 {
   "name": "webpack_env",
   "version": "0.1.0",
-  "description": "read variables from a .webpack_env.json file and make them available as globals",
+  "description": "read variables from a .env.js file and make them available to webpack as globals",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test"
