@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/toastynerd/webpack_env/issues"
   },
-  "homepage": "https://github.com/toastynerd/webpack_env#readme"
+  "homepage": "https://github.com/toastynerd/webpack_env#readme",
+  "dependencies": {
+    "webpack": "^1.12.2"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
 }
