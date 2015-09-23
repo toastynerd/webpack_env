@@ -1,3 +1,5 @@
-module.exports = {
-  TEST: 'prod value'
+module.exports = function() {
+  return {
+    TEST: 'prod value'
+  };
 };
