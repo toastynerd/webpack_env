@@ -1,6 +1,6 @@
 {
-  "name": "webpack_env",
-  "version": "0.1.0",
+  "name": "webpack-env",
+  "version": "0.2.0",
   "description": "read variables from a .env.js file and make them available to webpack as globals",
   "main": "index.js",
   "scripts": {
