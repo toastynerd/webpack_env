@@ -12,7 +12,7 @@ describe('webpack_env default', function() {
   });
 
   it('should be able to grab basic .env.json file', function() {
-    expect(this.webpackEnv.definitions.TEST).to.eql('test value'); 
+    expect(this.webpackEnv.definitions.TEST).to.eql('"test value"'); 
   });
 
   describe('not dev environment', function() {
@@ -28,7 +28,7 @@ describe('webpack_env default', function() {
     });
 
     it('should be able to read other env files', function() {
-      expect(this.webpackEnv.definitions.TEST).to.eql('prod value');
+      expect(this.webpackEnv.definitions.TEST).to.eql('"prod value"');
     });
   });
 });
