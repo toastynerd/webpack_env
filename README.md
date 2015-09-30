@@ -1,11 +1,13 @@
 Webpack Env
 ================
 [![Build Status](https://travis-ci.org/toastynerd/webpack_env.svg)](https://travis-ci.org/toastynerd/webpack_env)
-A webpack pluggin for creating ENV varialbe like globals in webpack
 
-First add Webpack Env as a webpack pluggin, using gulp this would 
+Webpack ENV is a webpack plug-in for creating ENV-variable-like globals in webpack.
+
+## Setup
+First add Webpack Env as a webpack plug-in, using gulp this would 
 look something like this:
-```
+```js
 //gulpfile.js
 var gulp = require('gulp');
 var webpack = require('webpack');
@@ -25,11 +27,14 @@ gulp.task('webpack', function() {
 Create a `.env.js` file in the same directory as your gulpfile.js.
 This file should export an object that contains the eventual globals
 you want your webpack code to contain:
-```
+```js
 module.exports = {
   SOME_VAR: 'some val'
 }
 ```
-Weback Env also supports having multiple files for multiple environments
-to create a production set of globals just create a `.production_env.js`
-file and run gulp with NODE_ENV set to 'production'
+
+## Multiple Environments
+
+Weback Env also supports having multiple files for multiple environments.
+To create a set of TEST environment globals, just create a `.test_env.js`
+file and run gulp with NODE_ENV set to 'test'.
