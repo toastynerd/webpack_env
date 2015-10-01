@@ -41,4 +41,4 @@ file and run gulp with NODE_ENV set to 'production'.
 
 ## Keep your secrets out of the repo
 
-Be sure you've added all your `.env` files to your `.gitignore.
+Be sure you've added all your `.env` files to your `.gitignore`.
