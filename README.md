@@ -36,5 +36,9 @@ module.exports = {
 ## Multiple Environments
 
 Weback Env also supports having multiple files for multiple environments.
-To create a set of TEST environment globals, just create a `.test_env.js`
-file and run gulp with NODE_ENV set to 'test'.
+To create a set of Production environment globals, just create a `.production_env.js`
+file and run gulp with NODE_ENV set to 'production'.
+
+## Keep your secrets out of the repo
+
+Be sure you've added all your `.env` files to your `.gitignore`.
