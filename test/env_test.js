@@ -1,5 +1,8 @@
 var nodenvDirBackup = process.env.NODENV_DIR;
 process.env.NODENV_DIR = __dirname;
+process.cwd = function() {
+  return __dirname;
+};
 var expect = require('chai').expect;
 
 describe('webpack_env default', function() {
@@ -17,6 +20,7 @@ describe('webpack_env default', function() {
 
   describe('not dev environment', function() {
     before(function() {
+      this.cwdBackup = process.cwd;
       this.nodeEnvBackup = process.env.NODE_ENV;
       process.env.NODE_ENV = 'production';
       delete require.cache[require.resolve(__dirname + '/../index')];
